@@ -1,0 +1,17 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+#top{
+    margin-top: 80px;
+    
+}
+.block__img {
+    width: 50%;
+    border-radius: 30px;
+}
+ 
+#block__image {
+    background-image: url("https://www.apple.com/v/iphone/home/bk/images/meta/iphone__ky2k6x5u6vue_og.png");
+    height: 600px;
+} 

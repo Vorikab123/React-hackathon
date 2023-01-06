@@ -1,0 +1,32 @@
+#navbar{
+    background-color: white;
+    border-radius: 7px;
+    width: 100%;
+    margin-top: 10px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+#icon_btn {
+    width: 50px;
+    height: 40px;
+    color: rgba(46, 45, 45, 0.842);
+}
+#pages{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.74);
+    font-size: 0.5cm;
+}
+#pages:hover{
+    color: blue;
+    transition: 600ms;
+}
+
+#icon_btn:hover{
+    color: black;
+    transition: 600ms;
+}
+
+#apple-btn {
+    border-radius:100px;
+}
