@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import AboutUsPage from "./pages/AboutUsPage";
+import AuthPages from "./pages/AuthPages";
 import HomePage from "./pages/HomePage";
 import ProductsPage from "./pages/ProductsPage";
 
@@ -20,6 +21,11 @@ const MainPoutes = () => {
       link: "/products",
       element: <ProductsPage />,
       id: 3,
+    },
+    {
+      link: "/auth",
+      element: <AuthPages/>,
+      id:4,
     },
   ];
   return (
