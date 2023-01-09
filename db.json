@@ -1,3 +1,26 @@
 {
-  "products": []
+  "products": [
+    {
+      "name": [
+        "adilet"
+      ],
+      "memory": "taeyrstd",
+      "title": "weayrstuyj",
+      "image": "https://ostore.kg/upload/resize_cache/iblock/001/500_500_1/001a338f905c72c5499ab1239a4d34bc.png",
+      "category": "aeyrstuyj",
+      "price": "100000",
+      "id": 1
+    },
+    {
+      "name": "rewatsryseraysy",
+      "memory": [
+        "23456785432"
+      ],
+      "title": "weayrstuyj",
+      "image": "https://ostore.kg/upload/resize_cache/iblock/001/500_500_1/001a338f905c72c5499ab1239a4d34bc.png",
+      "category": "aeyrstuyj",
+      "price": "100000",
+      "id": 2
+    }
+  ]
 }

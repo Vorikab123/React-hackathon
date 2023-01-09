@@ -10,9 +10,9 @@ const ProductsList = () => {
            <Box sx={{
              display: "flex" ,
              flexWrap: "wrap", 
-             justifyContent: "space-around",
+             justifyContent: "space-evenly",
              minHeight : "40vh",
-             gap: "15px "
+             gap: "15px 0px 15px 0px "
              }}>
                  {products.map((iphone)=>(
             <ProductsCard iphone= {iphone} key={iphone.id} />

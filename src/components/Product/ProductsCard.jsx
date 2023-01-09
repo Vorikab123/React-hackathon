@@ -12,16 +12,21 @@ import { useProducts } from '../../pages/context/productsContext';
 import { useNavigate } from 'react-router-dom';
 import "../css/style.css"
 
+
+
 export default function ProductsCard ({iphone}) {
+
+ 
+
 
   const navigate = useNavigate()
 
   const {deleteOneProduct} = useProducts()
 
+
   return (
-    <Card sx={{ maxWidth: 175, textAlign: "center", borderRadius: "14px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-      <Fab color="secondary"   aria-label="edit" sx={{position:"absolute" , height: "40px", width: "40px", margin: "0px 0px 340px 170px"}} >
-      <Button id='btn-price' disabled sx={{position: "absolute", margin: "400px 0px 0px 15px", height: "20px"}}>{iphone.price}сом</Button>
+    <Card sx={{ maxWidth: 175, textAlign: "center", borderRadius: "14px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "20px 30px 0px 30px"}}>
+      <Fab color="secondary" onClick={()=> navigate(`edit/${iphone.id}`)}   aria-label="edit" sx={{position:"absolute" , height: "40px", width: "40px", margin: "0px 0px 340px 170px"}} >
         <EditIcon />
       </Fab>
       <CardActionArea onClick={()=>navigate(`/edit/${iphone.id}`)} id = "getOneProduct" >
@@ -43,6 +48,7 @@ export default function ProductsCard ({iphone}) {
         </Button>
       </Box>
       </CardActions>
+      <Button id='btn-price' disabled sx={{position: "absolute", margin: "260px 0px 0px 150px", height: "20px"}}>{iphone.price}сом</Button>
     </Card>
   );
 }

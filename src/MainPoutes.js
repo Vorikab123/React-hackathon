@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import EditComponent from "./components/edit/EditProduct";
 import AddProduct from "./components/Product/AddProduct";
 import ProductDetails from "./components/Product/ProductDetails";
 import AboutUsPage from "./pages/AboutUsPage";
@@ -34,6 +35,11 @@ const MainPoutes = () => {
       link: "edit/:id",
       element: <ProductDetails />,
       id: 2,
+    },
+    {
+      link: "products/edit/:id",
+      element: <EditComponent />,
+      id: 3,
     },
   ];
   return (
