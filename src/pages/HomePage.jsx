@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from '@mui/material';
 import React from 'react';
+
 import "../index.css"
 
 const HomePage = () => {
@@ -20,12 +21,12 @@ const HomePage = () => {
            
         </Box>
 
-        <Box id= "block__image" >
-          <Box sx={{display: "flex", justifyContent: "center" }}>
-            <Typography variant='h2'>Why Apple is the best place to buy iPhone.</Typography>
-          </Box>
+          <Box id = "section">
+
+       
         </Box>
          </Box>
+
     );
 };
 
