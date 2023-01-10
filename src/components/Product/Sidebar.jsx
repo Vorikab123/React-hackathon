@@ -4,6 +4,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { useSearchParams } from "react-router-dom";
 import { useProducts } from "../../pages/context/productsContext";
 import "../css/style.css"
+// import "../Product/ProductCart.css"
 
 const SideBar = () => {
 
@@ -19,7 +20,7 @@ const SideBar = () => {
     })
   }, [search])
   return (
-    <Grid item sx={{width: "230px", margin: "20px 30px 0px 30px", borderRadius: "30px",}}>
+    <Grid id="sidebar" item sx={{width: "230px", margin: "20px 30px 0px 30px", borderRadius: "30px",}}>
       <Paper id = "sidebar" elevation={5} sx={{ p: 2, borderRadius: "30px" }}>
         <TextField
           fullWidth

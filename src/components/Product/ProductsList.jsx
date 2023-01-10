@@ -31,7 +31,7 @@ const ProductsList = () => {
     }, [searchParams])
     return (
         <Grid sx={{display: "flex", flexDirection: "row", }} >
-          <Box sx={{display: "flex", flexDirection: "row", }}>
+          <Box id="containerList" sx={{display: "flex", flexDirection: "row" }}>
           <SideBar/>
           <Box sx={{display: "flex", flexDirection: "column", }}>
            <Box sx={{

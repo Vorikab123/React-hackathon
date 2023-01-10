@@ -15,6 +15,7 @@ import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
 import { useAuth } from '../../pages/context/AuthContext';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { useCart } from '../../pages/context/cartContext';
+import { ADMIN } from '../helpers/const';
 function ElevationScroll(props) {
 
   
@@ -195,7 +196,7 @@ export default function Nabvar(props) {
           display: { xs: 'flex', flexDirection: "colum", justifyContent: "center"
         }
            }}>
-        <Box  sx={{ 
+        <Box id="nav_menu" sx={{ 
           flexGrow: 1,
           display: { xs: 'flex', flexDirection: "row", justifyContent: "center", gap: "0px 150px"
         }
@@ -205,7 +206,21 @@ export default function Nabvar(props) {
               )
             )}
              </Box> 
-             {user ? <Box style={{color:"black", marginTop:"5px"}} >{user.email}</Box> : <Box > Не авторизован</Box>}
+             {user ? <Box id="nav_user" style={{color:"black", marginTop:"5px"}} >{user.email}</Box> : <Box  id="nav_user" style={{color:"black", marginTop:"5px"}}> Не авторизован</Box>}
+             {user.email == ADMIN ? (
+            <Link id='nav_admin'
+              style={{
+                color: "black",
+                margin: "0 10px",
+                textDecoration: "underline",
+                marginTop:"5px",
+                textDecorationLine:"none"
+              }}
+              to="/add-product"
+            >
+              Admin
+            </Link>
+          ) : null}
           <Box >
           <IconButton
               // size="large"

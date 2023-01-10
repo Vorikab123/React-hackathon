@@ -1,0 +1,9 @@
+@media all and (max-width:320px){
+    /* #product_cart{
+        width: 110px;
+        height: 170px;
+    } */
+    #containerList{
+        flex-wrap: wrap;
+    }
+}

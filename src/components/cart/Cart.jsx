@@ -87,7 +87,10 @@ export default function Cart() {
             </TableBody>
           </Table>
          <Box sx={{display: "flex", justifyContent: "center"}}>
-         <Button onClick={()=>navigate("/pay")}>BUY NOW FOR    {cart?.totalPrice} $</Button>
+         <Button onClick={()=>{
+          navigate("/pay")
+          cartCleaner()
+         }}>BUY NOW FOR    {cart?.totalPrice} $</Button>
          </Box>
         </TableContainer>
        </Box>
