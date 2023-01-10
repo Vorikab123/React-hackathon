@@ -14,6 +14,7 @@
 
     height: 600px;
 
+
 } 
 
 #block__image-h2{
@@ -55,5 +56,9 @@
     background-image: url("https://img3.akspic.ru/crops/0/7/1/6/6/166170/166170-macos_12_monterey_official_stock_wallpaper_6k_resolution_light-3840x2160.jpg");
     width: 65%;
     border-radius: 100px 10px 100px 10px;
+}
+#block__image-right:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 800ms;
 }
 
