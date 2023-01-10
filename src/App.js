@@ -6,19 +6,21 @@ import "../src/index.css";
 import ProductsContextProvider from "./pages/context/productsContext";
 import CartContextProvider from "./pages/context/cartContext";
 import AuthContextProvider from "./pages/context/AuthContext";
+import Footer from "./components/Footer/Footer";
+
 const App = () => {
   return (
-      <BrowserRouter>
-    <ProductsContextProvider>
-      <AuthContextProvider>
-      <CartContextProvider>
-        <Navbar />
-        <MainPoutes />
-        </CartContextProvider>
+    <BrowserRouter>
+      <ProductsContextProvider>
+        <AuthContextProvider>
+          <CartContextProvider>
+            <Navbar />
+            <MainPoutes />
+            <Footer />
+          </CartContextProvider>
         </AuthContextProvider>
-    </ProductsContextProvider>
-      </BrowserRouter>
-
+      </ProductsContextProvider>
+    </BrowserRouter>
   );
 };
 
