@@ -1,26 +1,58 @@
 {
   "products": [
     {
-      "name": [
-        "adilet"
-      ],
-      "memory": "taeyrstd",
-      "title": "weayrstuyj",
+      "name": "Iphone",
+      "memory": "128",
+      "title": "Совершенно новая система двух камер со сверхширокоугольной камерой. Ночной режим и потрясающее качество видео. Защита от воды и пыли.1 Целый день без подзарядки.2Шесть прекрасных цветов. 11 станет вашим любимым числом.",
       "image": "https://ostore.kg/upload/resize_cache/iblock/001/500_500_1/001a338f905c72c5499ab1239a4d34bc.png",
-      "category": "aeyrstuyj",
-      "price": "100000",
+      "category": "11",
+      "price": "50000",
       "id": 1
     },
     {
-      "name": "rewatsryseraysy",
-      "memory": [
-        "23456785432"
-      ],
-      "title": "weayrstuyj",
-      "image": "https://ostore.kg/upload/resize_cache/iblock/001/500_500_1/001a338f905c72c5499ab1239a4d34bc.png",
-      "category": "aeyrstuyj",
-      "price": "100000",
+      "name": "Iphone",
+      "memory": "256",
+      "title": "\tУстойчивое к отпечаткам олеофобное покрытие, Поддержка одновременного отображения нескольких языков и наборов символов, Дисплей с расширенным цветовым охватом (P3), Дисплей True Tone, HDR, Super Retina XDR дисплей, Яркость до 1200 кд/м² при просмотре контента в формате HDR, Передняя панель Ceramic Shield",
+      "image": "https://ostore.kg/upload/iblock/d8a/d8ab725d53c41bb76c46718e42b43c3d.jpg",
+      "category": "12",
+      "price": "60000",
       "id": 2
+    },
+    {
+      "name": "Iphone",
+      "memory": "512",
+      "title": "Устойчивое к отпечаткам олеофобное покрытие, Поддержка одновременного отображения нескольких языков и наборов символов, Дисплей с расширенным цветовым охватом (P3), Дисплей True Tone, HDR, Super Retina XDR дисплей, Яркость до 1200 кд/м² при просмотре контента в формате HDR, Передняя панель Ceramic Shield",
+      "image": "https://ostore.kg/upload/resize_cache/iblock/bc3/500_500_1/bc3f46e0517cf7822b45d0d5083ef28a.png",
+      "category": "13",
+      "price": "80000",
+      "id": 3
+    },
+    {
+      "name": "Iphone",
+      "memory": "512",
+      "title": "Устойчивое к отпечаткам олеофобное покрытие, Поддержка одновременного отображения нескольких языков и наборов символов, Дисплей с расширенным цветовым охватом (P3), Дисплей True Tone, HDR, Super Retina XDR дисплей, Яркость до 1200 кд/м² при просмотре контента в формате HDR, Передняя панель Ceramic Shield",
+      "image": "https://ostore.kg/upload/resize_cache/iblock/0eb/500_500_1/0ebfab18ad8195c764a919f126547279.PNG",
+      "category": "14",
+      "price": "90000",
+      "id": 4
+    },
+    {
+      "name": "Iphone",
+      "memory": "128",
+      "title": "\tгеометки, серийная съемка, Live Photos со стабилизацией изображения, распознавание лиц и фигур, автоматическое включение HDR при фотосъемке, автоматическая стабилизация изображения, панорамная съемка (с разрешением до 63 Мп), 10-кратный цифровой зум",
+      "image": "https://ostore.kg/upload/resize_cache/iblock/ef2/500_500_1/ef24e9de6a20cddd906cb7ea7da4f143.PNG",
+      "category": "14 pro max",
+      "price": "120000",
+      "id": 5
+    },
+    {
+      "name": "Iphone",
+      "memory": "256",
+      "title": "Мощное обновление для отличных фото и видео. Широкоугольная камера, улавливающая больше света. Оптическая стабилизация изображения сдвигом матрицы. И ещё больше деталей в тёмных областях кадра при съёмке на сверхширокоугольную камеру.",
+      "image": "https://ostore.kg/upload/resize_cache/iblock/e2e/500_500_1/e2e0301e2db49c6839a2271e058ce81a.png",
+      "category": "13 mini",
+      "price": "70999",
+      "id": 6
     }
   ]
 }

@@ -32,9 +32,21 @@
     margin-top: 100px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2px;
 }
 
 #getOneProduct:hover{
     cursor: alias;
+}
+
+#sidebar:hover{
+background-color: rgba(137, 43, 226, 0.075);
+transition: 700ms;
+}
+
+#sidebar{
+    font-family: 'Roboto Mono', monospace !important;
+    width: 200px;
 }

@@ -6,12 +6,12 @@ import "../src/index.css";
 import ProductsContextProvider from "./pages/context/productsContext";
 const App = () => {
   return (
-    <ProductsContextProvider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <ProductsContextProvider>
         <Navbar />
         <MainPoutes />
-      </BrowserRouter>
-    </ProductsContextProvider>
+      </ProductsContextProvider>
+    </BrowserRouter>
   );
 };
 
