@@ -50,3 +50,11 @@ transition: 700ms;
     font-family: 'Roboto Mono', monospace !important;
     width: 200px;
 }
+#more_image:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 800ms;
+}
+#big_apple{
+    width: 200px;
+    height: 100px;
+}
