@@ -1,108 +1,59 @@
 {
   "products": [
     {
-      "name": "Apple ",
-      "description": "Представляем iPhone SE — самый мощный 4-дюймовый смартфон в истории. его, разработчики взяли за основу полюбившийся дизайн и полностью поменяли содержание. Установили тот же передовой процессор A9, что и на iPhone 6s, и камеру 12 Мп для съёмки невероятных фотографий и видео 4K. А благодаря Live Photos любой ваш снимок буквально оживёт.",
-      "price": 23,
-      "image": "https://svetofor.info/images/thumbnails/500/500/detailed/74/apple-iphone-se-silver_2c7c-lk.jpg",
-      "type": "kanayi",
+
+      "name": "Iphone",
+      "memory": "128",
+      "title": "Совершенно новая система двух камер со сверхширокоугольной камерой. Ночной режим и потрясающее качество видео. Защита от воды и пыли.1 Целый день без подзарядки.2Шесть прекрасных цветов. 11 станет вашим любимым числом.",
+      "image": "https://ostore.kg/upload/resize_cache/iblock/001/500_500_1/001a338f905c72c5499ab1239a4d34bc.png",
+      "category": "11",
+      "price": "50000",
       "id": 1
     },
     {
-      "name": "Смартфон Samsung Galaxy S22 ",
-      "description": "Соотношение сторон телефона: 20:9Размер изображения (дюйм): 1440x3040Количество мегапикселей основной камеры телефона: 108+10+10+12Тип процессора телефона: Exynos 2200Датчики и сенсоры телефона: гироскоп, компас, акселерометр, барометр, Отпечаток пальца (под дисплеем, ультразвуковой), приближение. Дополнительная информация о телефоне: несъемный аккумулятор",
-      "price": 1200,
-      "image": "https://svetofor.info/images/detailed/291/smartfon-samsung-galaxy-s22-ultra-256-gb-ram-12-gb-dual-sim-purple-1.jpg",
-      "type": "telephone",
+      "name": "Iphone",
+      "memory": "256",
+      "title": "\tУстойчивое к отпечаткам олеофобное покрытие, Поддержка одновременного отображения нескольких языков и наборов символов, Дисплей с расширенным цветовым охватом (P3), Дисплей True Tone, HDR, Super Retina XDR дисплей, Яркость до 1200 кд/м² при просмотре контента в формате HDR, Передняя панель Ceramic Shield",
+      "image": "https://ostore.kg/upload/iblock/d8a/d8ab725d53c41bb76c46718e42b43c3d.jpg",
+      "category": "12",
+      "price": "60000",
+      "id": 2
+    },
+    {
+      "name": "Iphone",
+      "memory": "512",
+      "title": "Устойчивое к отпечаткам олеофобное покрытие, Поддержка одновременного отображения нескольких языков и наборов символов, Дисплей с расширенным цветовым охватом (P3), Дисплей True Tone, HDR, Super Retina XDR дисплей, Яркость до 1200 кд/м² при просмотре контента в формате HDR, Передняя панель Ceramic Shield",
+      "image": "https://ostore.kg/upload/resize_cache/iblock/bc3/500_500_1/bc3f46e0517cf7822b45d0d5083ef28a.png",
+      "category": "13",
+      "price": "80000",
       "id": 3
     },
     {
-      "name": "Смартфон Xiaomi 12 Про ",
-      "description": "Соотношение сторон телефона: 20:9Размер изображения (дюйм): 1440x3200Количество мегапикселей основной камеры телефона: 50+50+50Тип процессора телефона: SM8450 Snapdragon 8 Gen 1Датчики и сенсоры телефона: датчик освещения, Гироскоп, цифровой компас, сканер отпечатка .Дополнительная информация о телефоне: Быстрая зарядка 120 Вт, 100% за 18 минут",
-      "price": 380,
-      "image": "https://svetofor.info/images/detailed/291/smartfon-xiaomi-12-pro-256-gb-ram-12-gb-dual-sim-purple-1.jpg",
-      "type": "telephone",
+      "name": "Iphone",
+      "memory": "512",
+      "title": "Устойчивое к отпечаткам олеофобное покрытие, Поддержка одновременного отображения нескольких языков и наборов символов, Дисплей с расширенным цветовым охватом (P3), Дисплей True Tone, HDR, Super Retina XDR дисплей, Яркость до 1200 кд/м² при просмотре контента в формате HDR, Передняя панель Ceramic Shield",
+      "image": "https://ostore.kg/upload/resize_cache/iblock/0eb/500_500_1/0ebfab18ad8195c764a919f126547279.PNG",
+      "category": "14",
+      "price": "90000",
       "id": 4
     },
     {
-      "name": "Телефон ARK Benefit U4",
-      "description": "Смартфон ARK обладает хорошей камерой на 0.1 Мп. Объем встроенной памяти составляет 0.032 Gb. Под крышкой скрывается аккумулятор ёмкостью 800 мАч",
-      "price": 25,
-      "image": "https://svetofor.info/images/detailed/280/telefon-ark-benefit-u4-0032-gb-ram-gb-1.jpg",
-      "type": "telephone",
+      "name": "Iphone",
+      "memory": "128",
+      "title": "\tгеометки, серийная съемка, Live Photos со стабилизацией изображения, распознавание лиц и фигур, автоматическое включение HDR при фотосъемке, автоматическая стабилизация изображения, панорамная съемка (с разрешением до 63 Мп), 10-кратный цифровой зум",
+      "image": "https://ostore.kg/upload/resize_cache/iblock/ef2/500_500_1/ef24e9de6a20cddd906cb7ea7da4f143.PNG",
+      "category": "14 pro max",
+      "price": "120000",
       "id": 5
     },
     {
-      "name": "Телефон Honor 10X Lite",
-      "description": "Смартфон Honor обладает хорошей камерой на 48+8+2+2 Мп. Объем встроенной памяти составляет 128 Gb. Оперативной памяти на 4 Gb хватает для стабильной работы системы. Под крышкой скрывается аккумулятор ёмкостью 5000 мАч. Поддержка диапазона 4G даст вам возможность пользоваться быстрым интернетом.",
-      "price": 180,
-      "image": "https://svetofor.info/images/thumbnails/500/500/detailed/219/telefon-honor-10x-lite-128-gb-ram-4-gb-white.jpg",
-      "type": "telephone",
+      "name": "Iphone",
+      "memory": "256",
+      "title": "Мощное обновление для отличных фото и видео. Широкоугольная камера, улавливающая больше света. Оптическая стабилизация изображения сдвигом матрицы. И ещё больше деталей в тёмных областях кадра при съёмке на сверхширокоугольную камеру.",
+      "image": "https://ostore.kg/upload/resize_cache/iblock/e2e/500_500_1/e2e0301e2db49c6839a2271e058ce81a.png",
+      "category": "13 mini",
+      "price": "70999",
       "id": 6
-    },
-    {
-      "name": "СМАРТ-ЧАСЫ APPLE WATCH SERIES 7 GPS 45MM GREEN ALUMINIUM CLOVER SPORT BAND MKN73GK/A",
-      "description": "Область просмотра на всегда включённом дисплее Retina увеличена примерно на 20% по сравнению с Series 6 — теперь пользоваться часами ещё удобнее",
-      "price": 550,
-      "image": "https://www.ixbt.com/img/r30/00/02/49/31/apple-watch-series-7-big.jpg",
-      "type": "watch",
-      "id": 7
-    },
-    {
-      "name": "СМАРТ-ЧАСЫ HUAWEI WATCH GT2 PRO SPORT NIGHT BLACK",
-      "description": "Создатели HUAWEI WATCH GT поставили перед собой задачу выявить максимальный потенциал батареи смарт-часов. Благодаря двойному процессору для носимых устройств Kirin A1 (собственная разработка HUAWEI) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами круглосуточно до 2 недель без подзарядки",
-      "price": 314,
-      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_911_461_0_6_320.webp",
-      "type": "watch",
-      "id": 8
-    },
-    {
-      "name": " СМАРТ-ЧАСЫ SAMSUNG GALAXY WATCH 3 STAINLESS 41MM SILVER (SM-R850NZSACIS)",
-      "description": "Теперь состояние здоровья контролировать стало легче. В инновационном устройстве Galaxy Watch3 с классическим дизайном гармонично сочетаются функциональность смартфона с новейшей технологией мониторинга здоровья пользователя.",
-      "price": 292,
-      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_911_410_6_1_320.webp",
-      "type": "watch",
-      "id": 9
-    },
-    {
-      "name": "СМАРТ ЧАСЫ SAMSUNG GALAXY WATCH ACTIVE 38MM SM-R500 BLACK (SM-R500NZKASKZ)",
-      "description": "Умные часы Galaxy Watch Active получили современный премиальный дизайн и умные технологии. Устройство выполнено в тонком и легком корпусе, внутри которого нашлось место для современной начинки и богатого набора функций.",
-      "price": 164,
-      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_911_285_4_320.webp",
-      "type": "watch",
-      "id": 10
-    },
-    {
-      "name": " СМАРТ-ЧАСЫ HUAWEI WATCH FIT ACTIVE SAKURA PINK",
-      "description": "Яркий AMOLED-экран 1,64 дюйма | Мониторинг здоровья1 и тренировок | GPS",
-      "price": 112,
-      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_911_432_7_1_320.webp",
-      "type": "watch",
-      "id": 11
-    },
-    {
-      "name": "СМАРТ-ЧАСЫ AMAZFIT BIP U BLACK",
-      "description": "Разрешение Xiaomi Amazfit Bip U составляет 320x302 пикселя. Высокое разрешение дисплея умных часов создает изысканный визуальный образ дисплея. Уведомления, сообщения и напоминания будут видны отчетливо при любом освещении.",
-      "price": 56,
-      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_911_542_0_1_320.webp",
-      "type": "watch",
-      "id": 12
-    },
-    {
-      "name": "Ноутбук Dell G3 15 Gaming G3590 15.6 ' Intel Core i5 9300H 8 Gb DDR4 512 Gb SSD GTX 1060Ti белый",
-      "description": "Системы Dell Gaming специально спроектированы с учетом уникальных высоких требований игровой аудитории. Они оснащаются новейшими процессорами и мощными выделенными графическими адаптерами, чтобы сделать каждую игру еще насыщеннее и реалистичнее.",
-      "price": 1234,
-      "image": "https://svetofor.info/images/thumbnails/500/500/detailed/183/noutbuk-dell-g3-15-gaming-g3590-156-intel-core-i5-9300h-8-gb-ddr4-512-gb-ssd-gtx-1060ti-belyj-1.jpg",
-      "type": "laptop",
-      "id": 13
-    },
-    {
-      "name": "Ноутбук ASUS X540UB 15.6 ' Intel Core i5 8250U 12 Gb DDR4 240 Gb SSD NVIDIA GeForce MX110 серебристый",
-      "description": "Процессор Intel Core i5 сделает любую вашу работу невероятно быстрой. Объем оперативной памяти составляет 12 Gb. Ноутбук ASUS X540UB c разрешением в 1920x1080 отлично подойдет для работы или просмотра любимых фильмов и сериалов. А с видеокартой NVIDIA GeForce MX110 изображение будет всегда четким и красивым. С объемом жесткого диска в 240 Gb вам всегда хватит места, чтобы сохранить важные документы. Вы можете пользоваться Wi-Fi в любом удобном для вас месте.",
-      "price": 802,
-      "image": "https://svetofor.info/images/thumbnails/500/500/detailed/216/noutbuk-asus-x540ub-156-intel-core-i5-8250u-12-gb-ddr4-240-gb-ssd-nvidia-geforce-mx110-serebristyj-1.jpg",
-      "type": "laptop",
-      "id": 14
     }
   ]
 }

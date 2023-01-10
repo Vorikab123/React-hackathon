@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from '@mui/material';
 import React from 'react';
+import MoreImage from '../components/MoreImage/MoreImage';
 
 import "../index.css"
 
@@ -21,8 +22,8 @@ const HomePage = () => {
            
         </Box>
 
-          <Box id = "section">
-
+          <Box id = "section" sx={{display: "flex", justifyContent: "center"}}>
+            <MoreImage/>
        
         </Box>
          </Box>
