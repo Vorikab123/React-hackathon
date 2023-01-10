@@ -17,9 +17,9 @@ const ProductDetails = () => {
             <Box>
                 <img src={oneProduct.image} alt="" />
             </Box>
-            <Box sx={{display: "flex", alignItems: 'center'}} >
+            <Box sx={{display: "flex",alignItems: 'center', justifyContent: "space-between", flexWrap: "wrap"}} >
             <TableContainer component={Paper} >
-      <Table sx={{ minWidth: 700, height: "260px"}} aria-label="simple table">
+      <Table sx={{ minWidth: "90", height: "260px"}} aria-label="simple table">
         <TableHead>
           <TableRow sx={{textAlign: "center"}}>
             <TableCell align="center">title</TableCell>
@@ -33,7 +33,7 @@ const ProductDetails = () => {
             <TableRow
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell align="center">{oneProduct.title}</TableCell>
+              <TableCell width={200} align="center">{oneProduct.title}</TableCell>
               <TableCell component="th" scope="row">
                 {oneProduct.name}
               </TableCell>

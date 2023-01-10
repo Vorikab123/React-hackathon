@@ -6,6 +6,7 @@ import React, {
   useReducer,
   useState,
 } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { ACTIONS, API } from "../../components/helpers/const";
 export const productsContext = createContext();
 export const useProducts = () => useContext(productsContext);
@@ -26,6 +27,10 @@ const reducer = (state = INIT_STATE, action) => {
 };
 
 const ProductsContextProvider = ({ children }) => {
+  const location = useLocation();
+
+  const navigate = useNavigate();
+
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -82,6 +87,31 @@ const ProductsContextProvider = ({ children }) => {
       console.log(error);
     }
   }
+  const getProduct = async () => {
+    try {
+      let { data } = await axios(`${API}${window.location.search}`);
+      let action = {
+        type: ACTIONS.GET_PRODUCTS,
+        payload: data,
+      };
+      dispatch(action);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const fetchByParams = async (quary, value) => {
+    const seacrh = new URLSearchParams(location.search);
+
+    if (value == "all") {
+      seacrh.delete(quary);
+    } else {
+      seacrh.set(quary, value);
+    }
+
+    const url = `${location.pathname}?${seacrh.toString()}`;
+
+    navigate(url);
+  };
 
   useEffect(() => {
     getProducts();
@@ -97,6 +127,8 @@ const ProductsContextProvider = ({ children }) => {
     handleOpen,
     handleClose,
     editProductSave,
+    fetchByParams,
+    getProduct,
   };
   return (
     <productsContext.Provider value={values}>
