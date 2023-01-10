@@ -1,5 +1,11 @@
 import axios from "axios";
-import React, { createContext, useContext, useEffect, useReducer } from "react";
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useReducer,
+  useState,
+} from "react";
 import { ACTIONS, API } from "../../components/helpers/const";
 export const productsContext = createContext();
 export const useProducts = () => useContext(productsContext);
@@ -20,6 +26,10 @@ const reducer = (state = INIT_STATE, action) => {
 };
 
 const ProductsContextProvider = ({ children }) => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
   async function getProducts() {
@@ -64,6 +74,15 @@ const ProductsContextProvider = ({ children }) => {
     }
   }
 
+  async function editProductSave(id, editedObj) {
+    try {
+      await axios.patch(`${API}/${id}`, editedObj);
+      getProducts();
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   useEffect(() => {
     getProducts();
   }, []);
@@ -74,6 +93,10 @@ const ProductsContextProvider = ({ children }) => {
     addProduct,
     deleteOneProduct,
     getOneProduct,
+    open,
+    handleOpen,
+    handleClose,
+    editProductSave,
   };
   return (
     <productsContext.Provider value={values}>

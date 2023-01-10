@@ -10,6 +10,7 @@ import Paper from '@mui/material/Paper';
 import { useCart } from '../../pages/context/cartContext';
 import { Button } from '@mui/material';
 import { Box } from '@mui/system';
+import { useNavigate } from 'react-router-dom';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -35,6 +36,9 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export default function Cart() {
 
+  const navigate = useNavigate();
+  
+
     const {getCart, cart,deleteCartProduct,changeProductCount} = useCart();
     React.useEffect(()=>{
         getCart()
@@ -58,6 +62,7 @@ export default function Cart() {
                 <StyledTableCell align="right">Price</StyledTableCell>
                 <StyledTableCell align="right">SubPrice</StyledTableCell>
                 <StyledTableCell align="right">-</StyledTableCell>
+                <StyledTableCell align="right"></StyledTableCell>
 
 
 
@@ -67,11 +72,11 @@ export default function Cart() {
               {cart?.products.map((row) => (
                 <StyledTableRow key={row.item.id}>
                   <StyledTableCell component="th" scope="row">
-                    <img src={row.item.picture} width="70px" height="70px" alt="" />
+                    <img src={row.item.image} width="70px" height="70px" alt="" />
                   </StyledTableCell>
                   <StyledTableCell align="right">{row.item.name}</StyledTableCell>
-                  <StyledTableCell align="right">{row.item.type}</StyledTableCell>
-                  <StyledTableCell align="right">{row.item.description}</StyledTableCell>
+                  <StyledTableCell align="right">{row.item.category}</StyledTableCell>
+                  <StyledTableCell align="right">{row.item.title}</StyledTableCell>
                   <StyledTableCell align="right">{row.item.price}</StyledTableCell>
                   <StyledTableCell align="right"><input type="number" min={1} max={1000} value={row.count} onChange={(e)=>changeProductCount(e.target.value, row.item.id)} /></StyledTableCell>
                   <StyledTableCell align="right">{row.subPrice}</StyledTableCell>
@@ -81,8 +86,12 @@ export default function Cart() {
               ))}
             </TableBody>
           </Table>
-          <Button onClick={cartCleaner}>BUY NOW FOR    {cart?.totalPrice} $</Button>
+         <Box sx={{display: "flex", justifyContent: "center"}}>
+         <Button onClick={()=>navigate("/pay")}>BUY NOW FOR    {cart?.totalPrice} $</Button>
+         </Box>
         </TableContainer>
        </Box>
       );
     }
+
+    // <Button onClick={cartCleaner}>BUY NOW FOR    {cart?.totalPrice} $</Button>

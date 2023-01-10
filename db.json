@@ -1,13 +1,108 @@
 {
   "products": [
     {
-      "name": "asdfghj",
-      "memory": "dsfgh",
-      "title": "adsfgh",
-      "image": "data:image/jpeg;base64,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",
-      "category": "sfddg",
-      "price": "asdfb",
+      "name": "Apple ",
+      "description": "Представляем iPhone SE — самый мощный 4-дюймовый смартфон в истории. его, разработчики взяли за основу полюбившийся дизайн и полностью поменяли содержание. Установили тот же передовой процессор A9, что и на iPhone 6s, и камеру 12 Мп для съёмки невероятных фотографий и видео 4K. А благодаря Live Photos любой ваш снимок буквально оживёт.",
+      "price": 23,
+      "image": "https://svetofor.info/images/thumbnails/500/500/detailed/74/apple-iphone-se-silver_2c7c-lk.jpg",
+      "type": "kanayi",
       "id": 1
+    },
+    {
+      "name": "Смартфон Samsung Galaxy S22 ",
+      "description": "Соотношение сторон телефона: 20:9Размер изображения (дюйм): 1440x3040Количество мегапикселей основной камеры телефона: 108+10+10+12Тип процессора телефона: Exynos 2200Датчики и сенсоры телефона: гироскоп, компас, акселерометр, барометр, Отпечаток пальца (под дисплеем, ультразвуковой), приближение. Дополнительная информация о телефоне: несъемный аккумулятор",
+      "price": 1200,
+      "image": "https://svetofor.info/images/detailed/291/smartfon-samsung-galaxy-s22-ultra-256-gb-ram-12-gb-dual-sim-purple-1.jpg",
+      "type": "telephone",
+      "id": 3
+    },
+    {
+      "name": "Смартфон Xiaomi 12 Про ",
+      "description": "Соотношение сторон телефона: 20:9Размер изображения (дюйм): 1440x3200Количество мегапикселей основной камеры телефона: 50+50+50Тип процессора телефона: SM8450 Snapdragon 8 Gen 1Датчики и сенсоры телефона: датчик освещения, Гироскоп, цифровой компас, сканер отпечатка .Дополнительная информация о телефоне: Быстрая зарядка 120 Вт, 100% за 18 минут",
+      "price": 380,
+      "image": "https://svetofor.info/images/detailed/291/smartfon-xiaomi-12-pro-256-gb-ram-12-gb-dual-sim-purple-1.jpg",
+      "type": "telephone",
+      "id": 4
+    },
+    {
+      "name": "Телефон ARK Benefit U4",
+      "description": "Смартфон ARK обладает хорошей камерой на 0.1 Мп. Объем встроенной памяти составляет 0.032 Gb. Под крышкой скрывается аккумулятор ёмкостью 800 мАч",
+      "price": 25,
+      "image": "https://svetofor.info/images/detailed/280/telefon-ark-benefit-u4-0032-gb-ram-gb-1.jpg",
+      "type": "telephone",
+      "id": 5
+    },
+    {
+      "name": "Телефон Honor 10X Lite",
+      "description": "Смартфон Honor обладает хорошей камерой на 48+8+2+2 Мп. Объем встроенной памяти составляет 128 Gb. Оперативной памяти на 4 Gb хватает для стабильной работы системы. Под крышкой скрывается аккумулятор ёмкостью 5000 мАч. Поддержка диапазона 4G даст вам возможность пользоваться быстрым интернетом.",
+      "price": 180,
+      "image": "https://svetofor.info/images/thumbnails/500/500/detailed/219/telefon-honor-10x-lite-128-gb-ram-4-gb-white.jpg",
+      "type": "telephone",
+      "id": 6
+    },
+    {
+      "name": "СМАРТ-ЧАСЫ APPLE WATCH SERIES 7 GPS 45MM GREEN ALUMINIUM CLOVER SPORT BAND MKN73GK/A",
+      "description": "Область просмотра на всегда включённом дисплее Retina увеличена примерно на 20% по сравнению с Series 6 — теперь пользоваться часами ещё удобнее",
+      "price": 550,
+      "image": "https://www.ixbt.com/img/r30/00/02/49/31/apple-watch-series-7-big.jpg",
+      "type": "watch",
+      "id": 7
+    },
+    {
+      "name": "СМАРТ-ЧАСЫ HUAWEI WATCH GT2 PRO SPORT NIGHT BLACK",
+      "description": "Создатели HUAWEI WATCH GT поставили перед собой задачу выявить максимальный потенциал батареи смарт-часов. Благодаря двойному процессору для носимых устройств Kirin A1 (собственная разработка HUAWEI) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами круглосуточно до 2 недель без подзарядки",
+      "price": 314,
+      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_911_461_0_6_320.webp",
+      "type": "watch",
+      "id": 8
+    },
+    {
+      "name": " СМАРТ-ЧАСЫ SAMSUNG GALAXY WATCH 3 STAINLESS 41MM SILVER (SM-R850NZSACIS)",
+      "description": "Теперь состояние здоровья контролировать стало легче. В инновационном устройстве Galaxy Watch3 с классическим дизайном гармонично сочетаются функциональность смартфона с новейшей технологией мониторинга здоровья пользователя.",
+      "price": 292,
+      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_911_410_6_1_320.webp",
+      "type": "watch",
+      "id": 9
+    },
+    {
+      "name": "СМАРТ ЧАСЫ SAMSUNG GALAXY WATCH ACTIVE 38MM SM-R500 BLACK (SM-R500NZKASKZ)",
+      "description": "Умные часы Galaxy Watch Active получили современный премиальный дизайн и умные технологии. Устройство выполнено в тонком и легком корпусе, внутри которого нашлось место для современной начинки и богатого набора функций.",
+      "price": 164,
+      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_911_285_4_320.webp",
+      "type": "watch",
+      "id": 10
+    },
+    {
+      "name": " СМАРТ-ЧАСЫ HUAWEI WATCH FIT ACTIVE SAKURA PINK",
+      "description": "Яркий AMOLED-экран 1,64 дюйма | Мониторинг здоровья1 и тренировок | GPS",
+      "price": 112,
+      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_911_432_7_1_320.webp",
+      "type": "watch",
+      "id": 11
+    },
+    {
+      "name": "СМАРТ-ЧАСЫ AMAZFIT BIP U BLACK",
+      "description": "Разрешение Xiaomi Amazfit Bip U составляет 320x302 пикселя. Высокое разрешение дисплея умных часов создает изысканный визуальный образ дисплея. Уведомления, сообщения и напоминания будут видны отчетливо при любом освещении.",
+      "price": 56,
+      "image": "https://object.pscloud.io/cms/cms/Photo/img_0_911_542_0_1_320.webp",
+      "type": "watch",
+      "id": 12
+    },
+    {
+      "name": "Ноутбук Dell G3 15 Gaming G3590 15.6 ' Intel Core i5 9300H 8 Gb DDR4 512 Gb SSD GTX 1060Ti белый",
+      "description": "Системы Dell Gaming специально спроектированы с учетом уникальных высоких требований игровой аудитории. Они оснащаются новейшими процессорами и мощными выделенными графическими адаптерами, чтобы сделать каждую игру еще насыщеннее и реалистичнее.",
+      "price": 1234,
+      "image": "https://svetofor.info/images/thumbnails/500/500/detailed/183/noutbuk-dell-g3-15-gaming-g3590-156-intel-core-i5-9300h-8-gb-ddr4-512-gb-ssd-gtx-1060ti-belyj-1.jpg",
+      "type": "laptop",
+      "id": 13
+    },
+    {
+      "name": "Ноутбук ASUS X540UB 15.6 ' Intel Core i5 8250U 12 Gb DDR4 240 Gb SSD NVIDIA GeForce MX110 серебристый",
+      "description": "Процессор Intel Core i5 сделает любую вашу работу невероятно быстрой. Объем оперативной памяти составляет 12 Gb. Ноутбук ASUS X540UB c разрешением в 1920x1080 отлично подойдет для работы или просмотра любимых фильмов и сериалов. А с видеокартой NVIDIA GeForce MX110 изображение будет всегда четким и красивым. С объемом жесткого диска в 240 Gb вам всегда хватит места, чтобы сохранить важные документы. Вы можете пользоваться Wi-Fi в любом удобном для вас месте.",
+      "price": 802,
+      "image": "https://svetofor.info/images/thumbnails/500/500/detailed/216/noutbuk-asus-x540ub-156-intel-core-i5-8250u-12-gb-ddr4-240-gb-ssd-nvidia-geforce-mx110-serebristyj-1.jpg",
+      "type": "laptop",
+      "id": 14
     }
   ]
 }

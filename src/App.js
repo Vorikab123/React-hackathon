@@ -5,16 +5,19 @@ import MainPoutes from "./MainPoutes";
 import "../src/index.css";
 import ProductsContextProvider from "./pages/context/productsContext";
 import CartContextProvider from "./pages/context/cartContext";
+import AuthContextProvider from "./pages/context/AuthContext";
 const App = () => {
   return (
-    <ProductsContextProvider>
       <BrowserRouter>
+    <ProductsContextProvider>
+      <AuthContextProvider>
       <CartContextProvider>
         <Navbar />
         <MainPoutes />
         </CartContextProvider>
-      </BrowserRouter>
+        </AuthContextProvider>
     </ProductsContextProvider>
+      </BrowserRouter>
   );
 };
 

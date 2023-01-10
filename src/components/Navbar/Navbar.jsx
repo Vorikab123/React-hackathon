@@ -9,10 +9,12 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import AppleIcon from '@mui/icons-material/Apple';
 import { Link, useNavigate } from 'react-router-dom';
-import { Button, Menu, MenuItem } from '@mui/material';
+import { Badge, Button, IconButton, Menu, MenuItem } from '@mui/material';
 import "../Navbar/Navbar.css"
 import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
 import { useAuth } from '../../pages/context/AuthContext';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import { useCart } from '../../pages/context/cartContext';
 function ElevationScroll(props) {
 
   
@@ -38,8 +40,13 @@ ElevationScroll.propTypes = {
 
 export default function Nabvar(props) {
   const navigate = useNavigate();
-  // const { user, handleLogout } = useAuth();
+  const { user, handleLogout } = useAuth();
+  const { getCart, cart } = useCart ();
 
+
+  React.useEffect(() => {
+    getCart();
+  }, []);
   const pages = [
     {
         link: "/",
@@ -108,11 +115,63 @@ export default function Nabvar(props) {
       </MenuItem>
       <MenuItem
         onClick={() => {
-          // handleLogout();
+          handleLogout();
           handleMenuClose();
         }}
       >
         Logout
+      </MenuItem>
+    </Menu>
+  );
+
+  const mobileMenuId = "primary-search-account-menu-mobile";
+  const renderMobileMenu = (
+    <Menu
+      anchorEl={mobileMoreAnchorEl}
+      anchorOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      id={mobileMenuId}
+      keepMounted
+      transformOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      open={isMobileMenuOpen}
+      onClose={handleMobileMenuClose}
+    >
+      <MenuItem>
+        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+          <Badge badgeContent={4} color="error">
+            
+          </Badge>
+        </IconButton>
+        <p>Messages</p>
+      </MenuItem>
+      <MenuItem>
+        <IconButton
+          size="large"
+          aria-label="show 17 new notifications"
+          color="inherit"
+        >
+          <Badge badgeContent={17} color="error">
+            <AddShoppingCartIcon />
+          </Badge>
+        </IconButton>
+        <p>Notifications</p>
+      </MenuItem>
+      <MenuItem onClick={handleProfileMenuOpen}>
+        <IconButton
+          size="large"
+          aria-label="account of current user"
+          aria-controls="primary-search-account-menu"
+          aria-haspopup="true"
+          color="inherit"
+        >
+          <SupervisedUserCircleIcon />
+        </IconButton>
+        <p>Profile</p>
       </MenuItem>
     </Menu>
   );
@@ -133,7 +192,7 @@ export default function Nabvar(props) {
           <Container >
       <Box sx={{ 
           flexGrow: 1,
-          display: { xs: 'flex', flexDirection: "colum", justifyContent: "center", paddingRight: "150px"
+          display: { xs: 'flex', flexDirection: "colum", justifyContent: "center"
         }
            }}>
         <Box  sx={{ 
@@ -146,20 +205,42 @@ export default function Nabvar(props) {
               )
             )}
              </Box> 
-             <Box id="admin" ><SupervisedUserCircleIcon id="icon_btn"
-                size="large"
-                edge="end"
-                aria-label="account of current user"
-                aria-controls={menuId}
-                aria-haspopup="true"
-                onClick={handleProfileMenuOpen}
-                color="inherit"></SupervisedUserCircleIcon></Box>
+             {user ? <Box style={{color:"black", marginTop:"5px"}} >{user.email}</Box> : <Box > Не авторизован</Box>}
+          <Box >
+          <IconButton
+              // size="large"
+              // aria-label="show 17 new notifications"
+              // color="inherit"
+              onClick={() => navigate("/cart")}
+            >
+              <Badge badgeContent={cart?.products.length} color="error">
+                <AddShoppingCartIcon  />
+              </Badge>
+            </IconButton>
+          </Box>
+          <IconButton
+              // size="large"
+              // edge="end"
+              // aria-label="account of current user"
+              // aria-controls={menuId}
+              // aria-haspopup="true"
+              onClick={handleProfileMenuOpen}
+              // color="inherit"
+            >
+              <SupervisedUserCircleIcon  />
+            </IconButton>
+            <Box   />
+          
         </Box>
+       
             
         
       </Container>
           </Toolbar>
+          {renderMobileMenu}
+      {renderMenu}
         </AppBar>
+       
       </ElevationScroll>
     </React.Fragment>
   );

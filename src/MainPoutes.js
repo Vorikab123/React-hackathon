@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import EditComponent from "./components/edit/EditProduct";
 import AddProduct from "./components/Product/AddProduct";
 import ProductDetails from "./components/Product/ProductDetails";
 import AboutUsPage from "./pages/AboutUsPage";
@@ -7,6 +8,7 @@ import AuthPages from "./pages/AuthPages";
 import HomePage from "./pages/HomePage";
 import ProductsPage from "./pages/ProductsPage";
 import CartPages from "./pages/CartPages";
+import PayPage from "./pages/PayPage";
 
 const MainPoutes = () => {
   const PUBLIC_PAGES = [
@@ -35,6 +37,11 @@ const MainPoutes = () => {
       element: <CartPages/>,
       id: 5,
     },
+    {
+      link: "/Pay",
+      element: <PayPage/>,
+      id:6,
+    }
   ];
   const PRIVATE_PAGES = [
     {
@@ -46,6 +53,11 @@ const MainPoutes = () => {
       link: "edit/:id",
       element: <ProductDetails />,
       id: 2,
+    },
+    {
+      link: "products/edit/:id",
+      element: <EditComponent />,
+      id: 3,
     },
   ];
   return (
