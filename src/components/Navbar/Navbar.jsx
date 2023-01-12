@@ -16,6 +16,7 @@ import { useAuth } from '../../pages/context/AuthContext';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { useCart } from '../../pages/context/cartContext';
 import { ADMIN } from '../helpers/const';
+import BurgerMenu from './BurgerMenu';
 function ElevationScroll(props) {
 
   
@@ -181,8 +182,10 @@ export default function Nabvar(props) {
     <React.Fragment>
       <CssBaseline />
       <ElevationScroll {...props}>
+        
         <AppBar id="navbar">
           <Toolbar>
+            <BurgerMenu/>
           <Typography variant="h6" color="black" component="div" >
             <Button id= "apple-btn" 
             onClick={()=>navigate("/")}
@@ -218,7 +221,7 @@ export default function Nabvar(props) {
               }}
               to="/add-product"
             >
-              Admin
+              Админ
             </Link>
           ) : null}
           <Box >

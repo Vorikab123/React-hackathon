@@ -4,12 +4,13 @@ import { useSearchParams } from 'react-router-dom';
 import { useProducts } from '../../pages/context/productsContext';
 import ProductsCard from './ProductsCard';
 import SideBar from './Sidebar';
+import "../Product/ProductCart.css"
 
 const ProductsList = () => {
     const {products, getProduct} = useProducts()
     const [page, setPage] = useState(1);
 
-    const itemPerPage = 5;
+    const itemPerPage = 15;
   
     const count = Math.ceil(products.length / itemPerPage);
   
@@ -30,11 +31,11 @@ const ProductsList = () => {
       getProduct()
     }, [searchParams])
     return (
-        <Grid sx={{display: "flex", flexDirection: "row", }} >
+        <Grid id="containerList" sx={{display: "flex", flexDirection: "row", }} >
           <Box id="containerList" sx={{display: "flex", flexDirection: "row" }}>
           <SideBar/>
-          <Box sx={{display: "flex", flexDirection: "column", }}>
-           <Box sx={{
+          <Box  sx={{display: "flex", flexDirection: "column", }}>
+           <Box id ="box_card"  sx={{
              display: "flex" ,
              flexWrap: "wrap", 
              minHeight : "40vh",

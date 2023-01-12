@@ -8,20 +8,24 @@ import { useNavigate, useParams } from 'react-router-dom';
 const EditComponent = () => {
 
     const navigate = useNavigate() 
-
+    // ! достаем опреденные  функции, которые нам нужны через useProducts(),что и сами создали 
     const { getOneProduct, oneProduct, editProductSave} = useProducts()
+  
 
     const [product, setProduct] = useState(oneProduct)
 
+    // ! чтобы сразу изменял
     useEffect(()=>{
       setProduct(oneProduct)
     }, [oneProduct])
 
+    // ! тут мы создали функцию, которая сперва создает обьект и уже дальше ищет атрибут нейм и делает его ключем обьекта, а также атрибут велЬю и делает значением ключа
    const handleInput = (e) => {
     let editedProduct = {
       ...oneProduct,
       [e.target.name]: [e.target.value]
     }
+
     setProduct(editedProduct)
     
    }

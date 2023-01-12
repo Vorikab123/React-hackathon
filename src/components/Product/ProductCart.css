@@ -4,6 +4,28 @@
         height: 170px;
     } */
     #containerList{
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    #box_card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
+@media all and (max-width:375px){
+    #containerList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 80%;
+}
+
+#box_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+

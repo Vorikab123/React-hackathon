@@ -13,8 +13,8 @@ const AboutUsPage = () => {
 
                 </Box>
                 <Box id= "right_block" sx={{width: "50%", display: "flex", flexDirection:"column", justifyContent: "center", alignItems: 'center',backgroundColor:"ButtonShadow", borderRadius: " 0 30px 30px 0" }} >
-                    <Typography variant='h3'>Новости</Typography>
-                    <Typography sx={{fontSize: '15px', width: "350px"}} variant="h6">
+                    <Typography id="h1" variant='h3'>Новости</Typography>
+                    <Typography id="h1" sx={{fontSize: '15px', width: "350px"}} variant="h6">
                     Мы создаём наши продукты максимально удобными, но безопасность и конфиденциальность всегда остаются нашим приоритетом. Специалисты, разрабатывающие оборудование, программное обеспечение и сервисы Apple, внимательно изучают отзывы и постоянно вносят улучшения, чтобы наши пользователи были надёжно защищены от нежелательного отслеживания. 
                     </Typography>
                 </Box>
@@ -28,7 +28,7 @@ const AboutUsPage = () => {
 </div>
 <div style={{width: "40%"}}>
    <h1>В сервисах Apple появятся новые ресурсы в честь Месяца здоровья сердца</h1> 
-   <span style={{fontSize: '20px', width: "10%"}}>Новый челлендж в приложении «Активность» на Apple Watch и сведения о влиянии активности на здоровье сердца, полученные в ходе исследования Apple Heart and Movement Study</span>
+   <span id='h1' style={{fontSize: '20px', width: "10%"}}>Новый челлендж в приложении «Активность» на Apple Watch и сведения о влиянии активности на здоровье сердца, полученные в ходе исследования Apple Heart and Movement Study</span>
    <h6></h6>
 </div>
 </div>  

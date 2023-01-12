@@ -11,10 +11,13 @@ import { ACTIONS, API } from "../../components/helpers/const";
 export const productsContext = createContext();
 export const useProducts = () => useContext(productsContext);
 
+// ! создаем обьект
 const INIT_STATE = {
   products: [],
   oneProduct: {},
 };
+
+// ! создаем  функцию reducer
 const reducer = (state = INIT_STATE, action) => {
   switch (action.type) {
     case ACTIONS.GET_PRODUCTS:
@@ -35,8 +38,10 @@ const ProductsContextProvider = ({ children }) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  // ! создание reducer
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
+  // ! обращаемся ко всем продуктам
   async function getProducts() {
     try {
       let { data } = await axios.get(API);
@@ -49,24 +54,30 @@ const ProductsContextProvider = ({ children }) => {
     }
   }
 
+  // ! Добавление продукта
   async function addProduct(product) {
     try {
       await axios.post(API, product);
+      // ! вызываем функцию getProducts(), чтобы без обновление на сайте отображались изменения
       getProducts();
     } catch (error) {
       console.log(error);
     }
   }
 
+  // ! удаление продукта
   async function deleteOneProduct(id) {
     try {
+      // ! обращаемся по айдишке к определенному продукту, и через axios.delete() удаляем данный продукт
       await axios.delete(`${API}/${id}`);
+      // ! вызываем функцию getProducts(), чтобы без обновление на сайте удалился продукт
       getProducts();
     } catch (error) {
       console.log(error);
     }
   }
-
+  // ? edit
+  // ! достаем определенный продукт через айдишку данного продукта
   async function getOneProduct(id) {
     try {
       let { data } = await axios.get(`${API}/${id}`);
@@ -79,8 +90,11 @@ const ProductsContextProvider = ({ children }) => {
     }
   }
 
+  // ! изменение определенного продукта по айдишке, другими словами,
+  //! через айдишку обращаемся продукту и изменяем егo на новый
   async function editProductSave(id, editedObj) {
     try {
+      // ! axios есть метод path - измение продукта, он принимает в себе апишку и измененный продукт
       await axios.patch(`${API}/${id}`, editedObj);
       getProducts();
     } catch (error) {
@@ -112,11 +126,12 @@ const ProductsContextProvider = ({ children }) => {
 
     navigate(url);
   };
-
+  // !  вызываем хук useEffect(), чтобы когда вызывался функция getProducts() все изменения, удаления сразу отображались без обновление страницы
   useEffect(() => {
     getProducts();
   }, []);
 
+  // ! передаем все функции как пропсы, чтобы достать их в других компонентах через useContext()
   const values = {
     products: state.products,
     oneProduct: state.oneProduct,

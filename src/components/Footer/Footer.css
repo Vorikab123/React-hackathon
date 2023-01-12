@@ -2,6 +2,7 @@ footer {
     padding: 50px 100px;
     background: #3C3D41;
     color: white;
+    width: 100%;
  }
  .footer-col {
     width: 33.3333333333%;
@@ -20,3 +21,7 @@ footer {
     padding: 0 7px;
     font-size: 18px;
  }
+
+
+
+ 
